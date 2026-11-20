@@ -37,8 +37,16 @@
 - **思路通用**：任何能解锁 Bootloader 的 Android 手机，Root 的主线都一致，只是解锁方式、工具和镜像不同
 - 文中的第三方解锁工具只针对小米 / 高通，其他品牌请走各自官方解锁通道（详见 TUTORIAL.md 末尾的「其他品牌说明」）
 
-## 关于工具
+## 关于工具与下载
 
-教程里用到的 KernelSU、QtScrcpy、adb / fastboot 都是开源免费的；小米解锁工具是酷安作者的第三方工具。**本仓库不放任何二进制安装包**，所有工具都在教程里给出官方下载地址，避免你下载到被二次打包、带卡密的假版本。作者名单见 [THANKS.md](THANKS.md)。
+教程里用到的 KernelSU、QtScrcpy、adb / fastboot 都是开源免费的；小米解锁工具是酷安作者的第三方工具。作者名单见 [THANKS.md](THANKS.md)。
+
+我把自己实际用到的工具（与教程版本一致）打包成了一个 Release，下载解压即可用：
+
+- 📦 **工具包 v1.0**：<https://github.com/suyihang15/android-root-tutorial/releases/tag/v1.0>
+  - 含 adb / fastboot、KernelSU APK、QtScrcpy、小米解锁工具、本教程对应的 init_boot 镜像
+  - 每个文件都附了 SHA256 校验值，下载后可自行核对
+
+> 仍然建议优先从作者官方渠道获取原版，避免二次打包风险。仓库 git 里不放二进制，全部在 Release。
 
 > ⚠️ 解锁 Bootloader 会恢复出厂设置、清空全部数据，通常影响保修，并降低设备安全等级。动手前请完整阅读 [DISCLAIMER.md](DISCLAIMER.md) 和教程里的「注意事项」，备份好自己的数据。
